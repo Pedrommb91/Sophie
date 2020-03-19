@@ -1,0 +1,9 @@
+# Binaries
+**/bin/
+
+#Sophie files
+*.log
+
+#Visual Studio files and folder
+.vs/
+**/packages/
