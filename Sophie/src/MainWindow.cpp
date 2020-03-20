@@ -4,6 +4,7 @@
 \date			19/03/2020
 \version		1.0
 *********************************************************************/
+#include "stdafx.h"
 #include "MainWindow.h"
 
 namespace sophie {
@@ -29,7 +30,7 @@ namespace sophie {
 	\version		1.0
 	\param[out]		Return true if suceed, false if it fails
 	*********************************************************************/
-	bool MainWindow::show()
+	bool MainWindow::Show()
 	{
 		glfwInit();
 		auto* window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);

@@ -1,11 +1,12 @@
 #pragma once
 /*!**********************************************************************
-\name			MainWindow
+\name			MainWindowTests
 \author			Pedro Barreiro
-\date			19/03/2020
+\date			20/03/2020
 \version		1.0
 *********************************************************************/
-#include "stdafx.h"
+#include "pch.h"
+#include "MainWindow.h"
 
 namespace sophie {
 
@@ -15,7 +16,7 @@ namespace sophie {
 	\date			19/03/2020
 	\version		1.0
 	*********************************************************************/
-	class MainWindow
+	class MainWindowMock : public MainWindow
 	{
 	private:
 		int width;
@@ -31,7 +32,7 @@ namespace sophie {
 		\date			19/03/2020
 		\version		1.0
 		*********************************************************************/
-		MainWindow();
+		MainWindowMock();
 
 		/*!**********************************************************************
 		\name			show
@@ -40,7 +41,7 @@ namespace sophie {
 		\version		1.0
 		\param[out]		Return true if suceed, false if it fails
 		*********************************************************************/
-		bool Show();
+		bool InvokeShow();
 
 		/*!**********************************************************************
 		\name			~MainWindow
@@ -48,9 +49,9 @@ namespace sophie {
 		\date			19/03/2020
 		\version		1.0
 		*********************************************************************/
-		~MainWindow();
-
-	private:
+		~MainWindowMock();
 
 	};
+
 }
+
