@@ -5,6 +5,7 @@
 \version		1.0
 *********************************************************************/
 #include "EntryPoint.h"
+#include "MainWindow.h"
 #include <iostream>
 
 /*!**********************************************************************
@@ -18,6 +19,9 @@
 int main(int argc, char* argv[])
 {
 	std::cout << "Sophie" << std::endl;
+
+	sophie::MainWindow* mainWindow = new sophie::MainWindow;
+	mainWindow->show();
 	
 	std::cin.get();
 }
